@@ -1,4 +1,4 @@
-﻿<div>
+﻿<div ng-controller="clienteListarController as vm">
 
     <h1> Listar </h1>
 
@@ -8,9 +8,9 @@
             <td> Email </td>
         </tr>
 
-        <tr>
-            <td> </td>
-            <td> </td>
+        <tr ng-repeat="item in vm.clientes">
+            <td>{{item.Nome}} </td>
+            <td>{{item.Email}} </td>
         </tr>
     </table>
 </div>

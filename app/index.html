@@ -1,13 +1,15 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+
 <head>
     <title></title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 </head>
+
 <body>
-    <div>
+    <div ui-view>
 
     </div>
 
@@ -17,5 +19,20 @@
     <!-- Importamos o arquivo de rotas -->
     <script src="libs/angular-ui-router.js"></script>
 
+
+    <!-- Importamos o arquivo de modules primeiro -->
+    <script src="modules/application/app.module.js"></script>
+
+    <!-- Importamos o arquivo de config depois do module -->
+    <script src="modules/application/app.config.js"></script>
+
+    <script src="modules/clientes/controllers/cliente.cadastrar.js"></script>
+    <script src="modules/clientes/controllers/cliente.listar.js"></script>
+
+    <script src="modules/clientes/services/cliente.service.js"></script>
+
+
+
 </body>
+
 </html>

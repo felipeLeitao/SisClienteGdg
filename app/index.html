@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
 <head>
     <title></title>
 
@@ -8,7 +8,7 @@
 
 </head>
 <body>
-    <div>
+    <div ui-view>
 
     </div>
 
@@ -17,6 +17,13 @@
 
     <!-- Importamos o arquivo de rotas -->
     <script src="libs/angular-ui-router.js"></script>
+
+
+    <!-- Importa o arquivo que cria o modulo -->
+    <script src="modules/application/app.module.js"> </script>
+
+<!--Importamos o arquivo de config-->
+    <script src="modules/application/app.config.js"> </script>
 	
 </body>
 </html>

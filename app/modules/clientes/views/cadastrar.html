@@ -1,18 +1,18 @@
-﻿<div>
+﻿<div ng-controller="ClienteCadastrarController as vm">
 
-<form>
-    <div class="form-group">
-        <label>Nome</label>
-        <input type="text" class="form-control" required="required" />
-    </div>
+    <form ng-submit="vm.cadastrar()">
+        <div class="form-group">
+            <label>Nome</label>
+            <input type="text" class="form-control" ng-model="vm.cliente.nome" required="required" />
+        </div>
 
-    <div class="form-group">
-        <label>Email</label>
-        <input type="email" class="form-control" required="required" />
-    </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" ng-model="vm.cliente.email" required="required" />
+        </div>
 
-    <button type="submit" class="btn btn-success"> Salvar </button>
+        <button type="submit" class="btn btn-success"> Salvar </button>
 
-</form>
+    </form>
 
 </div>
